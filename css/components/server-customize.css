@@ -18,7 +18,7 @@ section h6 {
 }
 
 .card {
-    width: 214px;
+    width: 160px;
     height: 200px;
     background-color: transparent;
     box-shadow: none;
@@ -96,4 +96,18 @@ section h6 {
 .oslist .card:hover .form-control,
 .oslist .active .form-control {
     color: #1cbcff
+}
+
+/* Large devices (desktop, 1024px and up) */
+
+@media screen and (min-width: 1024px) {
+    .os-slider {
+        overflow: hidden;
+    }
+    .card {
+        width: 214px;
+    }
+    .oslist {
+        margin-right: 4px;
+    }
 }
