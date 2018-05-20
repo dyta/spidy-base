@@ -9,16 +9,19 @@ body {
 h1.header-section {
     color: #1cbcff;
     font-weight: lighter;
-    margin: 25px 0 10px 0;
     text-transform: uppercase;
 }
-้
+
 span.header-section-sub {
     color: #fff;
 }
 
 hr {
     border-color: #333
+}
+
+#customize {
+    margin-top: 100px
 }
 
 section {

@@ -1,3 +1,99 @@
 section h6 {
     text-align: left
 }
+
+.os-slider {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.oslist {
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.oslist:last-child {
+    margin-right: 0;
+}
+
+.card {
+    width: 214px;
+    height: 200px;
+    background-color: transparent;
+    box-shadow: none;
+    border: 2px solid #959595;
+    border-radius: 10px;
+    transition: all .1s ease-in
+}
+
+.card-head {
+    height: 160px;
+}
+
+.card-body {
+    border-top: 2px solid #959595;
+    padding: 0;
+    transition: all .1s ease-in
+}
+
+.card p {
+    transition: all .1s ease-in
+}
+
+.os-img {
+    margin: 0 auto;
+    padding: 20px 0;
+    filter: grayscale(1);
+    transition: all .1s ease-in
+}
+
+/**
+ * Card Active
+ */
+
+.oslist .active p.title,
+.oslist .card:hover p {
+    color: #1cbcff;
+    font-weight: normal;
+    transition: all .1s ease-in
+}
+
+.oslist .active .os-img {
+    filter: grayscale(0)
+}
+
+.oslist .active,
+.oslist .card:hover {
+    border: 2px solid #1cbcff;
+    transition: all .1s ease-in
+}
+
+.oslist .active .card-body,
+.oslist .card:hover .card-body {
+    border-top: 2px solid #1cbcff;
+    transition: all .1s ease-in
+}
+
+.oslist .card:hover .os-img {
+    filter: grayscale(0);
+    transition: all .1s ease-in
+}
+
+/**
+ * .form-control card
+ */
+
+.card .form-control,
+.card .form-control:hover,
+.card .form-control:focus {
+    background-color: transparent;
+    border: none;
+    color: #999;
+    margin-bottom: 0;
+}
+
+.oslist .card:hover .form-control,
+.oslist .active .form-control {
+    color: #1cbcff
+}
