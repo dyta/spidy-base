@@ -1,0 +1,71 @@
+.bgc-dark {
+    background-color: #201f1f;
+}
+
+.hr-vertical {
+    border-left: 1px solid #444;
+    margin: 0 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.dropdown-item {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.navbar-nav .active>.nav-link {
+    font-weight: bold;
+}
+
+.form-search-icon,
+.icon-nav-user {
+    display: none
+}
+
+.search-box {
+    margin-top: 15px;
+}
+
+.dropdown-menu,
+.drop-login {
+    background-color: #222;
+}
+
+.drop-login {
+    min-width: 20rem;
+    padding: 10px;
+}
+
+.form-signin {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    margin-bottom: 5px;
+}
+
+.icon-nav-user,
+.login-text {
+    background: rgba(0, 188, 212, 1);
+    background: -moz-linear-gradient(left, rgba(0, 188, 212, 1) 0%, rgba(32, 151, 242, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 188, 212, 1)), color-stop(100%, rgba(32, 151, 242, 1)));
+    background: -webkit-linear-gradient(left, rgba(0, 188, 212, 1) 0%, rgba(32, 151, 242, 1) 100%);
+    background: -o-linear-gradient(left, rgba(0, 188, 212, 1) 0%, rgba(32, 151, 242, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 188, 212, 1) 0%, rgba(32, 151, 242, 1) 100%);
+    background: linear-gradient(to right, rgba(0, 188, 212, 1) 0%, rgba(32, 151, 242, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Large devices (desktop, 1024px and up) */
+
+@media screen and (min-width: 1024px) {
+    .form-search-icon,
+    .icon-nav-user {
+        display: inline-block
+    }
+    .search-box {
+        display: none;
+        margin: 0;
+    }
+}

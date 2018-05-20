@@ -1,0 +1,31 @@
+@import "components/navbar.css";
+@import "components/server-customize.css";
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #333333;
+    color: #fff
+}
+
+h1.header-section {
+    color: #1cbcff;
+    font-weight: lighter;
+    margin: 25px 0 10px 0;
+    text-transform: uppercase;
+}
+้
+span.header-section-sub {
+    color: #fff;
+}
+
+hr {
+    border-color: #333
+}
+
+section {
+    text-align: center
+}
+
+section p {
+    font-weight: lighter;
+    font-size: 14px;
+}
