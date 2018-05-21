@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Spidy Base</title>
+    <title>Home - Spidybase</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/reset.css">
@@ -17,6 +17,7 @@
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/customize.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Prompt:300,400,600|Roboto:300,400,500&amp;subset=thai" rel="stylesheet">
 </head>
@@ -25,7 +26,7 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bgc-dark">
             <div class="container">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="index.html">
                     <img src="images/logo.png" height="43" class="d-inline-block align-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -35,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">หน้าแรก
+                            <a class="nav-link" href="index.html">หน้าแรก
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -80,7 +81,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">ติดต่อเรา</a>
+                                <a class="nav-link" href="contact.html">ติดต่อเรา</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">บล็อก</a>
@@ -236,8 +237,7 @@
 
                 </div>
                 <div class="col">
-                    <input id="cpu" data-slider-id='cpu' data-slider-tooltip="hide" type="text" data-slider-min="1" data-slider-max="16" data-slider-step="1"
-                        data-slider-value="1" />
+                    <input id="cpu" data-slider-tooltip="hide" type="text" />
                 </div>
                 <div class="col-md-2 text-right f-14">
                     <span id="data-cpu">1</span>/16 vCPU
@@ -250,8 +250,7 @@
                     </p>
                 </div>
                 <div class="col">
-                    <input id="memory" data-slider-id="memory" data-slider-tooltip="hide" type="text" data-slider-min="2" data-slider-max="64"
-                        data-slider-step="2" data-slider-value="2" />
+                    <input id="memory" data-slider-tooltip="hide" type="text" />
                 </div>
                 <div class="col-md-2 text-right f-14">
                     <span id="data-memory">2</span>/64 GB
@@ -264,8 +263,7 @@
                     </p>
                 </div>
                 <div class="col">
-                    <input id="disk" data-slider-id="disk" data-slider-tooltip="hide" type="text" data-slider-min="100" data-slider-max="1000"
-                        data-slider-step="100" data-slider-value="100" />
+                    <input id="disk" data-slider-tooltip="hide" type="text" />
                 </div>
                 <div class="col-md-2 text-right f-14">
                     <span id="data-disk">100</span>GB/1TB
@@ -282,11 +280,15 @@
                     <button type="button" class="btn btn-primary btn-lg btn-block bg-theme">สร้าง</button>
                 </div>
             </div>
-            <h2 class="header-section h-package">Spidy
-                <span class="header-section-sub">Server</span>
+        </div>
+    </section>
+    <section id="package" class="pt-3">
+        <div class="container">
+            <h2 class="header-section h-package mb-3">Spidy
+                <span class="header-section-sub">Package</span>
             </h2>
-            <div class="package-list">
-                <div class="card mb-3 text-dark">
+            <div class="card-deck package-list mb-3 text-center text-dark">
+                <div class="card mb-4 box-shadow">
                     <div class="card-header bg-theme">Student PACK1
                         <h2 class="mt-3">฿499</h2>
                         <p class="f-20">/เดือน</p>
@@ -304,68 +306,97 @@
                             </li>
                             <li>
                                 <p class="card-text text-left">
-                                    <i class="fa fa-fw fa-server color-theme"></i>
+                                    <i class="fa fa-fw fa-database color-theme"></i>
                                     จัดเก็บข้อมูลได้ง่าย
                                 </p>
                             </li>
                         </ul>
                     </div>
                     <div class="card-footer">
-                        <button type="button" class="btn btn-primary btn-package mb-2">รายละเอียเพิ่มเติม</button>
-                        <button type="button" class="btn btn-primary btn-package">เลือก</button>
+                        <button type="button" class="btn btn-primary btn-package mb-2">รายละเอียดเพิ่มเติม</button>
+                        <button type="button" class="btn btn-primary btn-package" id="student1">เลือก</button>
+                    </div>
+                </div>
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header bg-theme">Student PACK2
+                        <h2 class="mt-3">฿3,129</h2>
+                        <p class="f-20">/เดือน</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">แพ็กเกจสำหรับผู้ที่ใช้งานเป็นต้องการใช้พื้นที่จักเก็บและรวดเร็วในการดึงข้อมูลมากกว่าเดิม
+                        </p>
+                    </div>
+                    <div class="card-body secondary">
+                        <ul>
+                            <li>
+                                <p class="card-text text-left">
+                                    <i class="fa fa-fw fa-sliders color-theme"></i>
+                                    สามารถควบคุมผ่านBrowser
+                                </p>
+                            </li>
+                            <li>
+                                <p class="card-text text-left">
+                                    <i class="fa fa-fw fa-database color-theme"></i>
+                                    จัดเก็บข้อมูลได้ง่าย
+                                </p>
+                            </li>
+                            <li>
+                                <p class="card-text text-left">
+                                    <i class="fa fa-fw fa-cog color-theme"></i>
+                                    ปรับแต่งการทำงานได้
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary btn-package mb-2">รายละเอียดเพิ่มเติม</button>
+                        <button type="button" class="btn btn-primary btn-package" id="student2">เลือก</button>
+                    </div>
+                </div>
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header bg-theme">Student PACK3
+                        <h2 class="mt-3">฿6,249</h2>
+                        <p class="f-20">/เดือน</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">แพ็กเกจสำหรับการทำงานเป็นทีม เหมาะกับงานที่มีขนาดใหญ่</p>
+                    </div>
+                    <div class="card-body secondary">
+                        <ul>
+                            <li>
+                                <p class="card-text text-left">
+                                    <i class="fa fa-fw fa-sliders color-theme"></i>
+                                    สามารถควบคุมผ่านBrowser
+                                </p>
+                            </li>
+                            <li>
+                                <p class="card-text text-left">
+                                    <i class="fa fa-fw fa-database color-theme"></i>
+                                    จัดเก็บข้อมูลได้ง่าย
+                                </p>
+                            </li>
+                            <li>
+                                <p class="card-text text-left">
+                                    <i class="fa fa-fw fa-cog color-theme"></i>
+                                    ปรับแต่งการทำงานได้
+                                </p>
+                            </li>
+                            <li>
+                                <p class="card-text text-left">
+                                    <i class="fa fa-fw fa-server color-theme"></i>
+                                    ไม่จำกัด bandwidth
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary btn-package mb-2">รายละเอียดเพิ่มเติม</button>
+                        <button type="button" class="btn btn-primary btn-package" id="student3">เลือก</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <script>
-
-        //OS
-        $('.card').click(function () {
-            $('.card').removeClass('active');
-            $(this).addClass('active');
-        });
-
-        //Datacenter
-        $('.dtc-list').click(function () {
-            $('.dtc-list').removeClass('active');
-            $(this).addClass('active');
-        });
-
-
-        //Slider
-        $("#cpu").slider();
-        $("#cpu").on("slide", function (e) {
-            $("#data-cpu").text(e.value);
-            cal()
-        });
-        $("#memory").slider();
-        $("#memory").on("slide", function (e) {
-            $("#data-memory").text(e.value);
-            cal()
-        });
-        $("#disk").slider();
-        $("#disk").on("slide", function (e) {
-            $("#data-disk").text(e.value);
-            cal()
-        });
-
-        //Tooltops
-        $('.fa-info-circle').tooltip()
-
-        function cal() {
-            var total = (parseFloat(document.getElementById("data-cpu").innerHTML) * 150 +
-                parseFloat(document.getElementById("data-memory").innerHTML) * 10 +
-                parseFloat(document.getElementById("data-disk").innerHTML) * 3.2) + 9;
-            Number.prototype.format = function (n, x) {
-                var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\.' : '$') + ')';
-                return this.toFixed(Math.max(0, ~~n)).replace(new RegExp(re, 'g'), '$&,');
-            };
-            $("#totalprice").text('฿' + total.format());
-        }
-
-    </script>
 </body>
 
 </html>

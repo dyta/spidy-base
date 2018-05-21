@@ -1,8 +1,3 @@
-.package-list {
-    width: 33.3333%;
-    /* float: left; */
-}
-
 .package-list .card {
     border: none;
     border-radius: 10px;
@@ -30,6 +25,19 @@
 
 .btn-package {
     width: 80%;
+    background-color: #1cbcff;
+    border-color: #1cbcff
+}
+
+/* Medium devices (tablet, 768px and up) */
+
+@media screen and (min-width: 768px) {
+    .btn-package {
+        width: 100%;
+    }
+    .package-list .card {
+        margin-left: 0;
+    }
 }
 
 /* Large devices (desktop, 1024px and up) */
@@ -37,5 +45,14 @@
 @media screen and (min-width: 1024px) {
     .h-package {
         text-align: left
+    }
+    .package-list .card:first-child {
+        margin-left: 100px;
+    }
+    .package-list .card:last-child {
+        margin-right: 100px;
+    }
+    .package-list .card {
+        margin-left: 15px;
     }
 }

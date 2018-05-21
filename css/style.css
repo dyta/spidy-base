@@ -4,7 +4,7 @@
 @import "components/package.css";
 body {
     font-family: 'Prompt', sans-serif;
-    background-color: #333;
+    background-color: #fff;
     color: #fff
 }
 
@@ -35,9 +35,15 @@ section p {
     font-size: 14px;
 }
 
-#customize,
+#customize {
+    background: url('/images/bg-spidy.png')#333;
+    background-repeat: no-repeat;
+}
+
 #package {
-    background-color: #333;
+    background: url('/images/bg-spidy2.png')#333;
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 .bg-theme {
