@@ -1,0 +1,26 @@
+.slider-handle {
+    background-color: #1cbcff;
+    background-image: none;
+}
+
+.slider-track {
+    background: #959595;
+}
+
+.slider.slider-horizontal {
+    width: 90%;
+}
+
+#cpu .slider-selection,
+#memory .slider-selection,
+#disk .slider-selection {
+    background: #1cbcff;
+}
+
+/* Large devices (desktop, 1024px and up) */
+
+@media screen and (min-width: 1024px) {
+    .slider.slider-horizontal {
+        width: 100%;
+    }
+}

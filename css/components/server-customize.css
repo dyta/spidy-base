@@ -2,6 +2,7 @@ section h6 {
     text-align: left
 }
 
+.dtc-slider,
 .os-slider {
     overflow: auto;
     white-space: nowrap;
@@ -11,33 +12,35 @@ section h6 {
     display: inline-block;
     list-style: none;
     margin-right: 10px;
+    cursor: pointer;
 }
 
+.datacenter:last-child,
 .oslist:last-child {
     margin-right: 0;
 }
 
-.card {
+.oslist .card {
     width: 160px;
     height: 200px;
     background-color: transparent;
     box-shadow: none;
     border: 2px solid #959595;
     border-radius: 10px;
-    transition: all .1s ease-in
+    transition: all .1s ease-in;
 }
 
-.card-head {
+.oslist .card-head {
     height: 160px;
 }
 
-.card-body {
+.oslist .card-body {
     border-top: 2px solid #959595;
     padding: 0;
     transition: all .1s ease-in
 }
 
-.card p {
+.oslist .card p {
     transition: all .1s ease-in
 }
 
@@ -52,8 +55,7 @@ section h6 {
  * Card Active
  */
 
-.oslist .active p.title,
-.oslist .card:hover p {
+.oslist .active p.title {
     color: #1cbcff;
     font-weight: normal;
     transition: all .1s ease-in
@@ -63,20 +65,14 @@ section h6 {
     filter: grayscale(0)
 }
 
-.oslist .active,
-.oslist .card:hover {
+.datacenter .active,
+.oslist .active {
     border: 2px solid #1cbcff;
     transition: all .1s ease-in
 }
 
-.oslist .active .card-body,
-.oslist .card:hover .card-body {
+.oslist .active .card-body {
     border-top: 2px solid #1cbcff;
-    transition: all .1s ease-in
-}
-
-.oslist .card:hover .os-img {
-    filter: grayscale(0);
     transition: all .1s ease-in
 }
 
@@ -84,27 +80,74 @@ section h6 {
  * .form-control card
  */
 
-.card .form-control,
-.card .form-control:hover,
-.card .form-control:focus {
+.oslist .card .form-control,
+.oslist .card .form-control:focus {
     background-color: transparent;
     border: none;
     color: #999;
     margin-bottom: 0;
 }
 
-.oslist .card:hover .form-control,
+.datacenter .active,
 .oslist .active .form-control {
     color: #1cbcff
+}
+
+/**
+ * Datacenter
+ */
+
+.dtc-list {
+    border: 2px solid #999;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.datacenter {
+    width: 46.66666%;
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.dtc-text {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/**
+ * Request OS
+ */
+
+.req-os-text {
+    color: #1cbcff
+}
+
+/**
+ * ETC
+ */
+
+/* Medium devices (tablet, 768px and up) */
+
+@media screen and (min-width: 768px) {
+    .datacenter {
+        width: 30%;
+    }
 }
 
 /* Large devices (desktop, 1024px and up) */
 
 @media screen and (min-width: 1024px) {
+    .dtc-slider,
     .os-slider {
         overflow: hidden;
     }
-    .card {
+    .datacenter {
+        width: 23.8888%;
+    }
+    .oslist .card {
         width: 214px;
     }
     .oslist {

@@ -1,12 +1,14 @@
 @import "components/navbar.css";
 @import "components/server-customize.css";
+@import "components/slider-handle.css";
+@import "components/package.css";
 body {
     font-family: 'Prompt', sans-serif;
-    background-color: #333333;
+    background-color: #333;
     color: #fff
 }
 
-h1.header-section {
+.header-section {
     color: #1cbcff;
     font-weight: lighter;
     text-transform: uppercase;
@@ -20,8 +22,8 @@ hr {
     border-color: #333
 }
 
-#customize {
-    margin-top: 100px
+.pt-100 {
+    padding-top: 100px;
 }
 
 section {
@@ -31,4 +33,37 @@ section {
 section p {
     font-weight: lighter;
     font-size: 14px;
+}
+
+#customize,
+#package {
+    background-color: #333;
+}
+
+.bg-theme {
+    background-color: #1cbcff;
+}
+
+.color-theme {
+    color: #1cbcff;
+}
+
+.f-12 {
+    font-size: 12px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.f-20 {
+    font-size: 20px;
 }

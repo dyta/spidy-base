@@ -1,0 +1,41 @@
+.package-list {
+    width: 33.3333%;
+    /* float: left; */
+}
+
+.package-list .card {
+    border: none;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.package-list .card-header {
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff
+}
+
+.package-list .card-header h2 {
+    margin-bottom: 0;
+}
+
+.package-list .card-body.secondary {
+    border-top: 1px solid #ddd
+}
+
+.package-list .card-body.secondary ul li {
+    list-style: none;
+}
+
+.btn-package {
+    width: 80%;
+}
+
+/* Large devices (desktop, 1024px and up) */
+
+@media screen and (min-width: 1024px) {
+    .h-package {
+        text-align: left
+    }
+}

@@ -17,6 +17,10 @@
     font-weight: bold;
 }
 
+.navbar-toggler {
+    border: none
+}
+
 .form-search-icon,
 .icon-nav-user {
     display: none
