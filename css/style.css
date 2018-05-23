@@ -4,6 +4,8 @@
 @import "components/package.css";
 @import "components/solution.css";
 @import "components/customers.css";
+@import "components/review.css";
+@import "components/map-location.css";
 body {
     font-family: 'Prompt', sans-serif;
     background-color: #fff;
@@ -58,6 +60,11 @@ section p {
     background: linear-gradient(155deg, rgba(28, 187, 255, 1) 0%, rgba(28, 187, 255, 1) 50%, rgba(3, 168, 244, 1) 0%, rgba(3, 168, 244, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cbbff', endColorstr='#03a8f4', GradientType=1);
 }
+
+#review {
+    background: url('../images/bg-review.png')#333;
+}
+
 
 .bg-theme {
     background-color: #1cbcff;

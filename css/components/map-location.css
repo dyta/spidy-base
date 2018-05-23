@@ -1,0 +1,47 @@
+.location {
+    border-width: 4px;
+    border-color: #1cbcff;
+    font-weight: bold;
+    color: #1cbcff;
+    height: 60px !important;
+}
+
+.contact-location-- {
+    display: none;
+}
+
+/* Medium devices (tablet, 768px and up) */
+
+@media screen and (min-width: 768px) {}
+
+/* Large devices (desktop, 1024px and up) */
+
+@media screen and (min-width: 1024px) {
+    .location {
+        display: none;
+    }
+    .contact-location-- {
+        display: inline;
+        position: relative;
+    }
+    .contact-location-- i {
+        cursor: pointer;
+        position: absolute;
+    }
+    .contact-location-- i.th {
+        right: 25%;
+        top: 35px;
+    }
+    .contact-location-- i.jp {
+        right: 14%;
+        top: -35px;
+    }
+    .contact-location-- i.gm {
+        left: 48%;
+        top: -82px;
+    }
+    .contact-location-- i.ccg {
+        left: 22%;
+        top: -50px;
+    }
+}

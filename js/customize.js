@@ -8,6 +8,15 @@ $(document).ready(function () {
         auto: false,
     });
 
+    //Review Slider
+    $('.review-slider').bxSlider({
+        mode: 'fade',
+        captions: true,
+        slideWidth: 1280,
+        controls: false,
+        auto: false,
+    });
+
     //OS
     $('.card').click(function () {
         $('.card').removeClass('active');
@@ -72,6 +81,7 @@ $(document).ready(function () {
     });
     //Tooltops
     $('.fa-info-circle').tooltip()
+    $('.fa-circle').tooltip()
 
     function cal() {
         var total = (parseFloat(document.getElementById("data-cpu").innerHTML) * 150 +
