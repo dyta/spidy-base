@@ -1,0 +1,28 @@
+#solution .btn-outline-light {
+    width: 40%;
+}
+
+/* Medium devices (tablet, 768px and up) */
+
+@media screen and (min-width: 768px) {
+    #solution .btn-outline-light {
+        width: 60%;
+    }
+    #solution .row h3 {
+        font-size: 24px;
+    }
+    #solution .row p {
+        height: 30%;
+    }
+}
+
+/* Large devices (desktop, 1024px and up) */
+
+@media screen and (min-width: 1024px) {
+    #solution .btn-outline-light {
+        width: 70%;
+    }
+    #solution .row p {
+        height: 68px;
+    }
+}

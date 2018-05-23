@@ -2,6 +2,8 @@
 @import "components/server-customize.css";
 @import "components/slider-handle.css";
 @import "components/package.css";
+@import "components/solution.css";
+@import "components/customers.css";
 body {
     font-family: 'Prompt', sans-serif;
     background-color: #fff;
@@ -44,6 +46,17 @@ section p {
     background: url('../images/bg-spidy2.png')#333;
     background-repeat: no-repeat;
     background-position: right bottom;
+}
+
+#solution {
+    background: rgba(28, 187, 255, 1);
+    background: -moz-linear-gradient(-30deg, rgba(28, 187, 255, 1) 0%, rgba(28, 187, 255, 1) 50%, rgba(3, 168, 244, 1) 0%, rgba(3, 168, 244, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(28, 187, 255, 1)), color-stop(50%, rgba(28, 187, 255, 1)), color-stop(51%, rgba(3, 168, 244, 1)), color-stop(100%, rgba(3, 168, 244, 1)));
+    background: -webkit-linear-gradient(-30deg, rgba(28, 187, 255, 1) 0%, rgba(28, 187, 255, 1) 50%, rgba(3, 168, 244, 1) 0%, rgba(3, 168, 244, 1) 100%);
+    background: -o-linear-gradient(-30deg, rgba(28, 187, 255, 1) 0%, rgba(28, 187, 255, 1) 50%, rgba(3, 168, 244, 1) 0%, rgba(3, 168, 244, 1) 100%);
+    background: -ms-linear-gradient(-30deg, rgba(28, 187, 255, 1) 0%, rgba(28, 187, 255, 1) 50%, rgba(3, 168, 244, 1) 0%, rgba(3, 168, 244, 1) 100%);
+    background: linear-gradient(155deg, rgba(28, 187, 255, 1) 0%, rgba(28, 187, 255, 1) 50%, rgba(3, 168, 244, 1) 0%, rgba(3, 168, 244, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cbbff', endColorstr='#03a8f4', GradientType=1);
 }
 
 .bg-theme {

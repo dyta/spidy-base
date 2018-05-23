@@ -18,7 +18,7 @@
 }
 
 .bx-wrapper .bx-pager {
-    padding-bottom: 20px;
+    padding-bottom: 45px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
@@ -45,7 +45,6 @@
     margin-right: 15px;
     width: 100% !important;
     height: 500px;
-    position: initial !important;
 }
 
 .package-list .card-header {
@@ -71,6 +70,13 @@
     width: 80%;
     background-color: #1cbcff;
     border-color: #1cbcff
+}
+
+@media (min-width: 576px) {
+    .package-list .card {
+        position: relative !important;
+        height: auto;
+    }
 }
 
 /* Medium devices (tablet, 768px and up) */

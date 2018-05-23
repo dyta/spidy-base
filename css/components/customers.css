@@ -1,0 +1,21 @@
+#our-customers .row {
+    overflow: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+#our-customers .row img {
+    width: 110px;
+}
+
+/* Medium devices (tablet, 768px and up) */
+
+@media screen and (min-width: 768px) {}
+
+/* Large devices (desktop, 1024px and up) */
+
+@media screen and (min-width: 1024px) {
+    #our-customers .row img {
+        width: 150px;
+    }
+}
