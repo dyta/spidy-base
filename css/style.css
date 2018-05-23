@@ -6,6 +6,7 @@
 @import "components/customers.css";
 @import "components/review.css";
 @import "components/map-location.css";
+@import "components/footer.css";
 body {
     font-family: 'Prompt', sans-serif;
     background-color: #fff;
@@ -65,6 +66,9 @@ section p {
     background: url('../images/bg-review.png')#333;
 }
 
+footer {
+    background-color: #333;
+}
 
 .bg-theme {
     background-color: #1cbcff;
