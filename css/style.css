@@ -36,12 +36,12 @@ section p {
 }
 
 #customize {
-    background: url('/images/bg-spidy.png')#333;
+    background: url('../images/bg-spidy.png')#333;
     background-repeat: no-repeat;
 }
 
 #package {
-    background: url('/images/bg-spidy2.png')#333;
+    background: url('../images/bg-spidy2.png')#333;
     background-repeat: no-repeat;
     background-position: right bottom;
 }

@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    //Package Slider
+    $('.package-slider').bxSlider({
+        mode: 'fade',
+        captions: true,
+        slideWidth: 1280,
+        controls: false,
+        auto: false,
+    });
+
     //OS
     $('.card').click(function () {
         $('.card').removeClass('active');

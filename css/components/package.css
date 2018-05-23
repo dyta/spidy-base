@@ -1,7 +1,50 @@
+.device-md {
+    display: none
+}
+
+/**
+ * Customize bxSlider
+ */
+
+.bx-wrapper {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: initial;
+}
+
+.bx-wrapper .bx-pager {
+    padding-bottom: 20px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #fff;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #1cbcff
+}
+
+/**
+ * 
+ * Card
+ */
+
 .package-list .card {
     border: none;
     border-radius: 10px;
     margin-right: 15px;
+    width: 100% !important;
+    height: 500px;
 }
 
 .package-list .card-header {
@@ -37,6 +80,12 @@
     }
     .package-list .card {
         margin-left: 0;
+    }
+    .device-md {
+        display: block;
+    }
+    .device-sm {
+        display: none;
     }
 }
 
