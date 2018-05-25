@@ -1,20 +1,19 @@
 $(document).ready(function () {
     //Package Slider
-    $('.package-slider').bxSlider({
-        mode: 'fade',
+    $('.package-slider--').bxSlider({
+        mode: 'horizontal',
         captions: true,
-        slideWidth: 1280,
         controls: false,
         auto: false,
+        infiniteLoop: false
     });
 
     //Review Slider
     $('.review-slider').bxSlider({
         mode: 'fade',
         captions: true,
-        slideWidth: 1280,
         controls: false,
-        auto: false,
+        auto: true,
     });
 
     //OS

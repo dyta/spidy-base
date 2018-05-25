@@ -2,6 +2,14 @@
     width: 40%;
 }
 
+#solution .items {
+    border-bottom: 1px dashed #8ddbff
+}
+
+#solution .items:last-child {
+    border-bottom: none
+}
+
 /* Medium devices (tablet, 768px and up) */
 
 @media screen and (min-width: 768px) {
@@ -14,6 +22,9 @@
     #solution .row p {
         height: 30%;
     }
+    #solution .items:nth-last-child(2) {
+        border-bottom: none
+    }
 }
 
 /* Large devices (desktop, 1024px and up) */
@@ -24,5 +35,8 @@
     }
     #solution .row p {
         height: 68px;
+    }
+    #solution .items {
+        border-bottom: none
     }
 }

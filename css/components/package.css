@@ -40,6 +40,11 @@
  * Card
  */
 
+.package-slider-- li {
+    width: 100%;
+    padding: 0 10px;
+}
+
 .package-list .card {
     border: none;
     border-radius: 10px;
