@@ -6,6 +6,7 @@
 @import "components/customers.css";
 @import "components/review.css";
 @import "components/map-location.css";
+@import "components/contact.css";
 @import "components/footer.css";
 body {
     font-family: 'Prompt', sans-serif;
@@ -76,6 +77,10 @@ footer {
 
 .color-theme {
     color: #1cbcff;
+}
+
+.border-color-theme {
+    border-color: #1cbcff
 }
 
 .f-12 {

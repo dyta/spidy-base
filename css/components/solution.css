@@ -3,7 +3,7 @@
 }
 
 #solution .items {
-    border-bottom: 1px dashed #8ddbff
+    border-bottom: 3px dashed #8ddbff
 }
 
 #solution .items:last-child {
