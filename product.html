@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Contact - Spidybase</title>
+    <title>Product - Spidybase</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/reset.css">
@@ -18,34 +18,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <script>
-        function initMap() {
-            var myLatlng = new google.maps.LatLng(12.647613, 99.865162);
-            var mapOptions = {
-                zoom: 15,
-                center: myLatlng
-            }
-            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-            var mapB = new google.maps.Map(document.getElementById("mapBig"), mapOptions);
-
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                title: "Hello World!"
-            });
-
-            var marker2 = new google.maps.Marker({
-                position: myLatlng,
-                title: "Hello World!"
-            });
-
-            // To add the marker to the map, call setMap();
-            marker.setMap(map);
-            marker2.setMap(mapB);
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEj6aoRRJ4XbYR1JiHQhKxX21Myvto414&callback=initMap" async
-        defer></script>
     <script src="js/bootstrap-slider.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/customize.js"></script>
@@ -66,7 +38,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="index.html">หน้าแรก
                                 <span class="sr-only">(current)</span>
                             </a>
@@ -111,7 +83,7 @@
                                     <i class="fa fa-search"></i>
                                 </a>
                             </li>
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link" href="contact.html">ติดต่อเรา</a>
                             </li>
                             <li class="nav-item">
@@ -145,143 +117,170 @@
             </div>
         </nav>
     </header>
-    <div class="jumbotron pt-100" id="contact">
-        <div class="container text-center">
-            <img src="images/logo_white.png" width="140px">
-            <h1 class="display-6">Contact us</h1>
-        </div>
-    </div>
-    <section id="contact-us">
+    <section class="pt-100" id="customize">
         <div class="container">
-            <div class="row">
-                <div class="col col-md-6" style="padding-top: 10%;">
-                    <img src="images/special_banner.png" width="300px" class="pt-5">
-                    <h3 class="pt-2">เพียงทำแบบสอบถามรับไปเลย ส่วนลดจากพวกเรา Spidybase 10%</h3>
-                    <small class="text-left">*สงวนสิทธิเฉพาะสมาชิก Spidybase</small>
-                </div>
+            <h1 class="header-section">Spidy
+                <span class="header-section-sub">Server</span>
+            </h1>
+            <p>เซิร์ฟเวอร์คลาวด์ที่มีประสิทธิภาพในโครงสร้างพื้นฐานขององค์กรด้วยการจำลองเสมือนแบบ KVM</p>
 
-                <div class="col col-md-6 pt-3 pb-3">
-                    <hr>
-                    <div class="row">
-                        <div class="col-12 text-left apply-form">
-                            <h5 class="text-warning">กรอกแบบฟอร์มเพื่อสิทธิประโยชน์</h5>
+            <h6>ระบบปฎิบัติการ</h6>
+            <ul class="os-slider">
+                <li class="oslist">
+                    <div class="card">
+                        <div class="card-head">
+                            <img class="os-img" src="images/os_1.png" width="80">
+                            <p class="title">
+                                Ubuntu
+                            </p>
                         </div>
-                        <div class="col-12 text-left pl-5 pr-5">
-                            <p class="text-warning">เพศ</p>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="1" name="11" class="custom-control-input">
-                                <label class="custom-control-label" for="1">ชาย</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="2" name="11" class="custom-control-input">
-                                <label class="custom-control-label" for="2">หญิง</label>
-                            </div>
-                            <p class="text-warning pt-3">คุณรู้จัก Spidybase หรือไม่</p>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="3" name="22" class="custom-control-input">
-                                <label class="custom-control-label" for="3">รู้จัก</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="4" name="22" class="custom-control-input">
-                                <label class="custom-control-label" for="4">ไม่รู้จัก</label>
-                            </div>
-                            <p class="text-warning pt-3">คุณเคยใช้บริการ Cloud หรือไม่</p>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="5" name="33" class="custom-control-input">
-                                <label class="custom-control-label" for="5">เคย</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="6" name="33" class="custom-control-input">
-                                <label class="custom-control-label" for="6">ไม่เคย</label>
-                            </div>
-                            <p class="text-warning pt-3">กรอก E-mail ของคุณ</p>
-                            <input type="email" class="form-control email" placeholder="E-mail">
-                            <div class="form-check pt-3 pb-3">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label">
-                                    รับข่าวสารจาก Spidybase
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-outline-primary color-theme border-color-theme" style="width:150px">ส่ง</button>
+                        <div class="card-body">
+                            <select class="form-control">
+                                <option>16.04.4 x64</option>
+                                <option>16.04.4 x32</option>
+                                <option>14.04.5 x64</option>
+                            </select>
                         </div>
                     </div>
+                </li>
+                <li class="oslist">
+                    <div class="card">
+                        <div class="card-head">
+                            <img class="os-img" src="images/os_2.png" width="80">
+                            <p class="title">
+                                Debian
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <select class="form-control">
+                                <option>9.4 x64</option>
+                                <option>9.4 x32</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="oslist">
+                    <div class="card">
+                        <div class="card-head">
+                            <img class="os-img" src="images/os_3.png" width="80">
+                            <p class="title">
+                                CentOS
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <select class="form-control">
+                                <option>7.4 x64</option>
+                                <option>7.4 x32</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="oslist">
+                    <div class="card">
+                        <div class="card-head">
+                            <img class="os-img" src="images/os_4.png" width="80">
+
+                            <p class="title">
+                                Julicloud
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <select class="form-control">
+                                <option>Juli 1.2 x64</option>
+                                <option>Juli 1.2 x32</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="oslist">
+                    <div class="card">
+                        <div class="card-head">
+                            <img class="os-img" src="images/os_5.png" width="80">
+                            <p class="title">
+                                Windows
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <select class="form-control">
+                                <option>Windows 10 x64</option>
+                                <option>Windows 10 x32</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <h6>เลือกภูมิภาคดาต้าเซ็นเตอร์</h6>
+            <ul class="dtc-slider">
+                <li class="datacenter">
+                    <div class="dtc-list">
+                        <p class="dtc-text">ไทย</p>
+                    </div>
+                </li>
+                <li class="datacenter">
+                    <div class="dtc-list">
+                        <p class="dtc-text">สิงคโปร์</p>
+                    </div>
+                </li>
+                <li class="datacenter">
+                    <div class="dtc-list">
+                        <p class="dtc-text">จีน</p>
+                    </div>
+                </li>
+                <li class="datacenter">
+                    <div class="dtc-list">
+                        <p class="dtc-text">อังกฤษ</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-md-2 text-left">
+                    <p class="req-os-text">vCPUs
+                        <i class="fa fa-info-circle text-warning" data-toggle="tooltip" data-placement="right" title="Tooltip on right"></i>
+                    </p>
+
+                </div>
+                <div class="col">
+                    <input id="cpu" data-slider-tooltip="hide" type="text" />
+                </div>
+                <div class="col-md-2 text-right f-14">
+                    <span id="data-cpu">1</span>/16 vCPU
                 </div>
             </div>
-            <hr class="device-sm">
-            <div class="row pt-4 pb-4 device-sm--">
-                <div class="col-md-4 pb-5">
-                    <div class="media">
-                        <div class="media-body">
-                            <i class="fa fa-address-book fa-3x pb-2"></i>
-                            <p class="media-text pt-2">(+66)123456789
-                                <br>contact@spidybase.com</p>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-md-2 text-left">
+                    <p class="req-os-text">Memory
+                        <i class="fa fa-info-circle text-warning" data-toggle="tooltip" data-placement="right" title="Tooltip on right"></i>
+                    </p>
                 </div>
-                <div class="col-md-4 pb-5">
-                    <div class="media">
-                        <div class="media-body">
-                            <i class="fa fa-clock fa-3x pb-2"></i>
-                            <p class="media-text pt-2">จันทร์-ศุกร์ 9:00-17:00
-                                <br>หยุดเสาร์และอาทิตย์</p>
-                        </div>
-                    </div>
+                <div class="col">
+                    <input id="memory" data-slider-tooltip="hide" type="text" />
                 </div>
-                <div class="col-md-4 pb-5">
-                    <div class="media">
-                        <div class="media-body">
-                            <i class="fa fa-map-marker fa-3x pb-2"></i>
-                            <p class="media-text pt-2">1 หมู่ 3 ถนนชะอำ-ปราณบุรี
-                                <br>ต.สามพระยา อ.ชะอำ
-                                <br>จ.เพชรบุรี 76120</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 pb-5">
-                    <div id="map"></div>
+                <div class="col-md-2 text-right f-14">
+                    <span id="data-memory">2</span>/64 GB
                 </div>
             </div>
-            <div class="row pt-4 pb-4 device-lg--">
-                <div class="col-lg-4">
-                    <ul>
-                        <li class="service-item contact">
-                            <div class="media">
-                                <div class="media-icon">
-                                    <i class="fa fa-address-book fa-2x"></i>
-                                </div>
-                                <div class="media-body text-left">
-                                    <p class="media-text">(+66)123456789
-                                        <br>contact@spidybase.com</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="service-item contact">
-                            <div class="media">
-                                <div class="media-icon">
-                                    <i class="fa fa-clock fa-2x"></i>
-                                </div>
-                                <div class="media-body text-left">
-                                    <p class="media-text">จันทร์-ศุกร์ 9:00-17:00
-                                        <br>หยุดเสาร์และอาทิตย์</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="service-item contact">
-                            <div class="media">
-                                <div class="media-icon">
-                                    <i class="fa fa-map-marker fa-2x"></i>
-                                </div>
-                                <div class="media-body text-left">
-                                    <p class="media-text">1 หมู่ 3 ถนนชะอำ-ปราณบุรี
-                                        <br>ต.สามพระยา อ.ชะอำ
-                                        <br>จ.เพชรบุรี 76120</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="row">
+                <div class="col-md-2 text-left">
+                    <p class="req-os-text">SSD Disk
+                        <i class="fa fa-info-circle text-warning" data-toggle="tooltip" data-placement="right" title="Tooltip on right"></i>
+                    </p>
                 </div>
-                <div class="col-lg-8 pb-5">
-                    <div id="mapBig"></div>
+                <div class="col">
+                    <input id="disk" data-slider-tooltip="hide" type="text" />
+                </div>
+                <div class="col-md-2 text-right f-14">
+                    <span id="data-disk">100</span>GB/1TB
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-4 col-md-4 col-lg-6 text-right">
+                    <h3 class="color-theme">
+                        <span id="totalprice">฿499</span>
+                        <p>/month</p>
+                    </h3>
+                </div>
+                <div class="col-8 col-md-8 col-lg-6">
+                    <button type="button" class="btn btn-primary btn-lg btn-block bg-theme">สร้าง</button>
                 </div>
             </div>
         </div>
