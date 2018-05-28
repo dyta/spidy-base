@@ -1,0 +1,50 @@
+#header-page {
+    background: url('../../images/bg05.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+#product-service {
+    background: url('../../images/bg06.png');
+    background-size: cover;
+    background-position: top center;
+    -webkit-box-shadow: inset 10px 10px 5px 500px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: inset 10px 10px 5px 500px rgba(255, 255, 255, 0.8);
+    box-shadow: inset 10px 10px 5px 500px rgba(255, 255, 255, 0.8);
+}
+
+.nav-tabs .nav-link {
+    border-radius: 200px;
+    border: 4px solid #808080;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.nav-tabs .nav-link img {
+    padding-top: 10px;
+}
+
+.nav-tabs .nav-item {
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border: 4px solid #1cbcff;
+}
+
+.nav-tabs .nav-link img {
+    filter: contrast(0)
+}
+
+.nav-tabs .nav-link:hover img,
+.nav-tabs .nav-link.active img {
+    filter: contrast(1)
+}
+
+.nav-tabs {
+    border-bottom: none
+}

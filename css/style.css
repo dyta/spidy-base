@@ -7,6 +7,7 @@
 @import "components/review.css";
 @import "components/map-location.css";
 @import "components/contact.css";
+@import "components/product.css";
 @import "components/footer.css";
 body {
     font-family: 'Prompt', sans-serif;
